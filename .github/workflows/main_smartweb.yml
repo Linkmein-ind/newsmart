@@ -37,7 +37,7 @@ jobs:
         run: |
           source antenv/bin/activate
           export DJANGO_SETTINGS_MODULE=smart.settings
-          python manage.py collectstatic
+          python manage.py collectstatic --noinput
             .
             !antenv/
 
